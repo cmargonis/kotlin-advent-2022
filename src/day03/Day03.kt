@@ -1,3 +1,7 @@
+package day03
+
+import readInput
+
 fun main() {
     fun toCommons(it: String): Set<Char> {
         val inter = it.chunked(it.length / 2)

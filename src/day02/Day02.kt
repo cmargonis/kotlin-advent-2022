@@ -1,3 +1,7 @@
+package day02
+
+import readInput
+
 fun main() {
 
     fun calculateScoreForRound(elfPlay: ElfHand, playerResponse: PlayerResponse): Int {

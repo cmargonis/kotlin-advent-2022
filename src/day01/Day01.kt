@@ -1,3 +1,7 @@
+package day01
+
+import readInput
+
 fun main() {
     fun getElves(input: List<String>): List<Elf> {
         var calories = 0

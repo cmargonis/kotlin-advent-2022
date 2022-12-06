@@ -1,3 +1,7 @@
+package day05
+
+import readInput
+
 fun main() {
 
     fun getStack(input: List<String>): Pair<Int, Map<Int, ArrayDeque<String>>> {

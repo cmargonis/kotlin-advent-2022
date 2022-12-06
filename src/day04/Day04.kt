@@ -1,3 +1,7 @@
+package day04
+
+import readInput
+
 fun main() {
 
     fun IntRange.contains(other: IntRange): Boolean = first <= other.first && last >= other.last
