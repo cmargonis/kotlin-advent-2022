@@ -2,6 +2,8 @@ package day04
 
 import readInput
 
+private const val DIRECTORY = "./day04"
+
 fun main() {
 
     fun IntRange.contains(other: IntRange): Boolean = first <= other.first && last >= other.last
@@ -29,7 +31,7 @@ fun main() {
             .first()
     }.count { it }
 
-    val input = readInput("Day04")
+    val input = readInput("${DIRECTORY}/Day04")
     println(part1(input))
     println(part2(input))
 }

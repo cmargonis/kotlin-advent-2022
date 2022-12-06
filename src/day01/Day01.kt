@@ -2,6 +2,8 @@ package day01
 
 import readInput
 
+private const val DIRECTORY = "./day01"
+
 fun main() {
     fun getElves(input: List<String>): List<Elf> {
         var calories = 0
@@ -28,7 +30,7 @@ fun main() {
         .take(3)
         .sumOf { it.totalCalories }
 
-    val input = readInput("Day01")
+    val input = readInput("${DIRECTORY}/Day01")
     println(part1(input))
     println(part2(input))
 }

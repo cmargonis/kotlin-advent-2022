@@ -2,6 +2,8 @@ package day02
 
 import readInput
 
+private const val DIRECTORY = "./day02"
+
 fun main() {
 
     fun calculateScoreForRound(elfPlay: ElfHand, playerResponse: PlayerResponse): Int {
@@ -35,7 +37,7 @@ fun main() {
         .map { toPair(it) }
         .sumOf { calculateScoreForSecondRound(ElfHand(it.first), Outcome.fromEncryptedMessage(it.second)) }
 
-    val input = readInput("Day02")
+    val input = readInput("${DIRECTORY}/Day02")
     println(part1(input))
     println(part2(input))
 }

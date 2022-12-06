@@ -2,6 +2,8 @@ package day05
 
 import readInput
 
+private const val DIRECTORY = "./day05"
+
 fun main() {
 
     fun getStack(input: List<String>): Pair<Int, Map<Int, ArrayDeque<String>>> {
@@ -78,7 +80,7 @@ fun main() {
         return stack.topOfTheStack().reversed()
     }
 
-    val input = readInput("Day05")
+    val input = readInput("${DIRECTORY}/Day05")
     println(part1(input))
     println(part2(input))
 }

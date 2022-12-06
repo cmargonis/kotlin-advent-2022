@@ -2,6 +2,8 @@ package day03
 
 import readInput
 
+private const val DIRECTORY = "./day03"
+
 fun main() {
     fun toCommons(it: String): Set<Char> {
         val inter = it.chunked(it.length / 2)
@@ -31,7 +33,7 @@ fun main() {
         .map { toPriority(findBadge(it)) }
         .sum()
 
-    val input = readInput("Day03")
+    val input = readInput("${DIRECTORY}/Day03")
     println(part1(input))
     println(part2(input))
 }
